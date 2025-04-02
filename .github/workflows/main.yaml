@@ -22,7 +22,7 @@ jobs:
           curl $PROXIES_URL > proxies.yaml
           ret=$?
           length=$(wc -l < proxies.yaml)
-          if (( ret = 0 )) && (( length >= 10 )); then 
+          if (( ret == 0 )) && (( length >= 10 )); then 
             git add . && git commit -m 'Update: '"$(date)" && git push
           else
             echo 'nothing to push'
