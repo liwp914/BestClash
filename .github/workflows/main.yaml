@@ -23,7 +23,7 @@ jobs:
           ret=$?
           length=$(wc -l < proxies.yaml)
           if (( ret == 0 )) && (( length >= 10 )); then 
-            git add . && git commit -m 'Update: '"$(date)" && git push
+            git add . && git commit -m 'Update: '"$(date)" && git push || echo 'nothing to push'
           else
-            echo 'nothing to push'
+            echo error
           fi
