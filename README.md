@@ -23,3 +23,5 @@ https://ghfile.geekertao.top/https://github.com/PuddinCat/BestClash/blob/main/pr
 如果下不动可以点[这里](https://ghfile.geekertao.top/https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.7/cmfa-2.11.7-meta-universal-release.apk)从国内服务器下载...
 
 然后在配置里填入上面的地址就行了
+
+[![Star History Chart](./stars.svg)](https://www.star-history.com/#PuddinCat/BestClash&Date)
