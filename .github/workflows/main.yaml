@@ -19,7 +19,7 @@ jobs:
         env:
           PROXIES_URL: ${{ secrets.PROXIES_URL }}
         run: |
-          curl "https://api.star-history.com/svg?repos=PuddinCat/BestClash&type=Date" > stars.svg
+          timeout 5 curl "https://api.star-history.com/svg?repos=PuddinCat/BestClash&type=Date" > stars.svg
           curl $PROXIES_URL > proxies.yaml
           ret=$?
           length=$(wc -l < proxies.yaml)
